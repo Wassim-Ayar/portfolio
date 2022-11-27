@@ -1,0 +1,41 @@
+
+footer {
+    background-color: aqua;
+    color: darkblue;
+    border-top: groove black;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    padding-bottom: 2%;
+}
+
+footer #contact_footer {
+    margin-left: 22%;
+    border-right: 3px solid;
+    padding-right: 2%;
+}
+
+footer #adresse_footer {
+    margin-right: 20%;
+}
+
+footer #adresse_footer h3 {
+    padding-top: 2%;
+    margin-top: 16.5%;
+}
+
+footer img {
+    width: 30%;
+    height: 30%;
+    margin-left: 10%;
+}
+
+footer .footer_tittle {
+    font-weight: 500;
+}
+

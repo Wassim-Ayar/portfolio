@@ -1,0 +1,69 @@
+#presentation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("fond.jpg");
+    background-size: cover;
+    gap: 80px;
+    padding-top: 100px !important;
+    padding-bottom: 50px !important;
+    padding: 300px;
+}
+
+#pres {
+    color: white;
+    font-family: Monocraft;
+}
+
+#pres h1 {
+    font-size: 50px;
+    font-weight: 800;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#pres p {
+    width: auto;
+    font-size: 17px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+#profile {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    border: solid 2px rgb(81, 81, 248);
+}
+
+@media screen and (max-width: 1400px) {
+    #presentation {
+        padding: 0 !important;
+        padding-bottom: 30px !important;
+    }
+
+    #profile {
+        margin-top: 70px;
+    }
+
+    #pres {
+        justify-content: center;
+        align-content: center;
+        text-align: justify;
+    }
+
+    #pres h1 {
+        text-align: center;
+        font-size: 40px;
+        padding: 0px 20px;
+    }
+
+    #pres p {
+        margin: 0;
+        width: 100%;
+        max-width: auto;
+        padding: 0px 20px;
+    }
+}

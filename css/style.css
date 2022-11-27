@@ -1,0 +1,28 @@
+@import url('button.css');
+
+@import url('navbar.css');
+
+@import url('flex3D.css');
+
+@import url('bootstrapPS.css');
+
+@import url('gridCDEB.css');
+
+@import url('main.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none !important;
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: currentColor;
+}
+

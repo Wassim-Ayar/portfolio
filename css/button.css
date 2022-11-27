@@ -1,0 +1,66 @@
+.Button-Image {
+    position: absolute;
+    height: auto;
+    width: auto;
+    bottom: 140px;
+    background-color: rgb(96, 120, 255);
+    border-radius: 100px;
+}
+
+.Linkedin {
+    height: 114px;
+    width: 206px;
+}
+
+.Button-Animation {
+    height: auto;
+    width: auto;
+    background-color: rgb(96, 120, 255);
+    border-radius: 100px;
+}
+
+.Button-Animation:hover {
+    animation: Scale infinite 2s ease;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes Scale {
+    0% {
+        transform: scale(1.1);
+    }
+
+    25% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+    
+    75% {
+        transform: scale(1.4);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+#flex3D:hover > .Button-Image {
+    animation: Clignotement 1s infinite ease-in;
+}
+
+@keyframes Clignotement {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}

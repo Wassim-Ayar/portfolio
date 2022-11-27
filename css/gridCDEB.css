@@ -1,0 +1,115 @@
+#gridCDEB {
+    display: grid;
+    background-image: url('fond3D.png');
+    background-size: cover;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 0;
+    color: white;
+    }
+
+#affiche {
+    width: 100%;
+    height: 100%;
+    grid-area: 1 / 1 / 4 / 3;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+#affiche:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-out;
+}
+
+#gridCDEB h1 {
+    font-family: Monocraft;
+    grid-area: 1 / 3 / 2 / 4;
+    text-align: start;
+    margin-top: 60%;
+    padding-left: 10%;
+}
+
+#gridCDEB p {
+    font-family: Monocraft;
+    grid-area: 2 / 3 / 3 / 5;
+    text-align: justify;
+    padding-left: 5%;
+}
+
+.Button-Animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(96, 120, 255);
+    border-radius: 100px;
+    grid-area: 2 / 3 / 4 / 5;
+    height: 50%;
+    width: 30%;
+    margin-left: 250px;
+    margin-top: 200px;
+}
+
+.Button-Animation:hover {
+    animation: Scale infinite 2s ease;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes Scale {
+    0% {
+        transform: scale(1.1);
+    }
+
+    25% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+    
+    75% {
+        transform: scale(1.4);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    #gridCDEB {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        justify-items: center;
+        align-items: center;
+        margin: 0;
+     }
+
+    #affiche:hover {
+        transform: none;
+        transition: 0.2s ease-out;
+    }
+
+    #affiche {
+        margin: 0;
+    }
+ 
+    #gridCDEB h1 {
+        display: none;
+    }
+
+    #gridCDEB p {
+        display: none;
+    }
+
+    .Button-Animation {
+        display: none;
+    }
+}

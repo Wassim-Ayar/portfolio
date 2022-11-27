@@ -1,0 +1,94 @@
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 3px rgb(0, 0, 134);
+    background-color: rgb(202, 240, 255);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+nav:hover > #logo {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+nav:hover > #menu {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+#logo {
+    height: 15%;
+    width: 15%;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0;
+    margin-right: 30px;
+    gap: 30px;
+    color: blue;
+}
+
+#menu a {
+    font-family: Monocraft;
+    font-weight: 200;
+    font-size: 17px;
+}
+
+#menu a:hover {
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.1s ease-in;
+    color: darkblue;
+    background-color: rgb(208, 208, 255);
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 4%;
+        position: inherit;
+        gap: 10px;
+    }
+
+    #logo {
+        height: 50%;
+        width: 50%;
+        justify-content: center;
+        margin-left: 0px;
+        background-color: rgb(187, 193, 255);
+        padding: 10px;
+        border-radius: 50px;
+    }
+
+
+    #menu {
+        flex-direction: column;
+        background-color: rgb(187, 193, 255);
+        padding: 15px;
+        border-radius: 30px;
+        margin: 0;
+    }
+
+    #menu a {
+        font-size: 12px;
+    }
+
+    #menu a:hover {
+        font-size: 15px;
+    }
+}
+    
